@@ -6,7 +6,7 @@
         var xSite = 'http://127.0.0.1:3000/';
 
         var values = {
-            appName: 'Ip Address v0.0.1',
+            appName: 'Server IP Address',
             listUrl: xSite + 'ip',
             tplPath: 'templates'
         };

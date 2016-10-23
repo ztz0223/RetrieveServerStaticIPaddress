@@ -7,5 +7,11 @@
             .controller('IpManagerCtrl', ['$scope', '$rootScope', '$window', 'ipAddressConfig',
                 function ($scope, $rootScope, $window, ipAddressConfig) {
                     this.config = ipAddressConfig;
+
+                    this.IpAddr = "xxx.xxx.xxx.xxx";
+
+                    this.GetIpAddr = function () {
+                        console.log("Get GetIpAddr")
+                    }
                 }]);
     })(angular);
