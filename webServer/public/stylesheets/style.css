@@ -6,3 +6,36 @@ body {
 a {
   color: #00B7FF;
 }
+
+.navbar .btn.btn-flat {
+  height: 30px;
+  margin-left: 5px;
+  padding: 2px;
+  width: 32px;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background: #fff none repeat scroll 0 0;
+}
+
+.navbar-inverse .navbar-form input[type="text"] {
+  box-shadow: none;
+  color: #7a7a7a;
+  margin: 0 10px;
+}
+
+.navbar .navbar-form {
+  border-bottom: medium none;
+  border-top: medium none;
+  box-shadow: none;
+  margin: 12px 0;
+  padding: 0;
+}
+
+.breadcrumb {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  font-size: 17px;
+  margin: 12px 0;
+  max-height: 30px;
+  overflow: hidden;
+  padding: 0;
+}

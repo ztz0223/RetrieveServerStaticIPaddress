@@ -1,5 +1,5 @@
 {
-  "name": "Retrieve Public IP address Of Server",
+  "name": "ip-address-of-server",
   "license": "MIT",
   "dependencies": {
     "angular": "~1.5.0",

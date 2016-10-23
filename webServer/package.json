@@ -1,6 +1,9 @@
 {
-  "name": "webServer",
+  "name": "Ip-Address",
   "version": "0.0.1",
+  "description": "Full-Stack JavaScript web Server via Angular NodeJS",
+  "homepage": "",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
@@ -10,6 +13,7 @@
     "body-parser": "~1.15.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
+    "ejs": "^2.5.2",
     "express": "~4.13.4",
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
