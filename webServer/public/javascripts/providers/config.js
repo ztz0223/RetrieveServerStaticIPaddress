@@ -7,7 +7,7 @@
 
         var values = {
             appName: 'Server IP Address',
-            listUrl: xSite + 'ip',
+            ipUrl: '/ip',
             tplPath: 'templates'
         };
 

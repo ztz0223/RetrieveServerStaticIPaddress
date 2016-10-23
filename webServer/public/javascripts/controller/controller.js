@@ -2,16 +2,28 @@
  * Created by azuo1228 on 10/23/2016.
  */
 (function (angular) {
-        'use strict';
-        angular.module('IpAddressApp')
-            .controller('IpManagerCtrl', ['$scope', '$rootScope', '$window', 'ipAddressConfig',
-                function ($scope, $rootScope, $window, ipAddressConfig) {
-                    this.config = ipAddressConfig;
+    'use strict';
+    angular.module('IpAddressApp')
+        .controller('IpManagerCtrl', ['$scope', '$rootScope', '$window', 'ipAddressConfig', '$http',
+            function ($scope, $rootScope, $window, ipAddressConfig, $http) {
 
-                    this.IpAddr = "xxx.xxx.xxx.xxx";
+                var self = this;
 
-                    this.GetIpAddr = function () {
-                        console.log("Get GetIpAddr")
-                    }
-                }]);
-    })(angular);
+                this.config = ipAddressConfig;
+                this.IpAddr = "xxx.xxx.xxx.xxx";
+
+                this.GetIpAddr = function () {
+                    console.log("Get GetIpAddr");
+
+                    $http.get(this.config.ipUrl).success(function (data, code) {
+                        console.log('OK with code: ' + code + '!');
+                        self.IpAddr = data.ip;
+
+                    }).error(function (data, code) {
+                        console.log('Error with code: ' + code + '!');
+                    })['finally'](function () {
+
+                    });
+                }
+            }]);
+})(angular);
