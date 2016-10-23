@@ -66,4 +66,19 @@ Congrats, you got your static or public IP address.
 
 ## Start the webserver
 
-To be continued!
+### Clone code
+
+Just:
+
+
+> git clone https://github.com/ztz0223/RetrieveServerStaticIPaddress.git
+
+### Install libs
+
+After clone the codes, go into `RetrieveServerStaticIPaddress\webServer>`, and then input:
+
+> npm install
+
+### Run Server
+
+> npm start
