@@ -11,6 +11,7 @@
 
                 this.config = ipAddressConfig;
                 this.IpAddr = "xxx.xxx.xxx.xxx";
+                this.IpAddrIpconfig = "xxx.xxx.xxx.xxx";
 
                 this.GetIpAddr = function () {
                     console.log("Get GetIpAddr");
@@ -18,6 +19,16 @@
                     $http.get(this.config.ipUrl).success(function (data, code) {
                         console.log('OK with code: ' + code + '!');
                         self.IpAddr = data.ip;
+
+                    }).error(function (data, code) {
+                        console.log('Error with code: ' + code + '!');
+                    })['finally'](function () {
+
+                    });
+
+                    $http.get(this.config.ipconfigUrl).success(function (data, code) {
+                        console.log('OK with code: ' + code + '!');
+                        self.IpAddrIpconfig = data.ipconfig;
 
                     }).error(function (data, code) {
                         console.log('Error with code: ' + code + '!');

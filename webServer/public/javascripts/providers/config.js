@@ -8,6 +8,7 @@
         var values = {
             appName: 'Server IP Address',
             ipUrl: '/ip',
+            ipconfigUrl: '/ipconfig',
             tplPath: 'templates'
         };
 
