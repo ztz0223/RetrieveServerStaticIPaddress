@@ -44,8 +44,7 @@ router.get('/ipconfig', function (req, res) {
     console.log("Get Server Public Ip Address from ifconfig.me/ip !");
 
     var opt = {
-        host: 'localhost',
-        port: 3000,
+        host: 'ifconfig.me',
         path: '/ip',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
